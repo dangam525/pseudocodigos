@@ -1,11 +1,11 @@
-Funcion rellenarMatriz (filas,columnas)
+Funcion rellenarMatriz (matriz,filas,columnas)
 	para i=1 hasta filas
 		para j=1 hasta columnas
 			matriz[i,j]=Aleatorio(0,20)
 		FinPara
 	FinPara
 Fin Funcion
-Funcion imprimirMatriz(filas,columnas)
+Funcion imprimirMatriz(matriz,filas,columnas)
 	para i=1 hasta filas
 		para j=1 hasta columnas
 			Escribir matriz[i,j] " " Sin Saltar
@@ -15,9 +15,10 @@ Funcion imprimirMatriz(filas,columnas)
 Fin Funcion
 
 Algoritmo rellenar_matriz
+	Escribir "dame dos números"
+	leer filas, columnas
+	Dimension matriz[filas,columnas]
 	
-	Dimension matriz[a,b]
-	
-	rellenarMatriz[filas,columnas]
-	imprimirMatriz[filas,columnas]
+	rellenarMatriz(matriz,filas,columnas)
+	imprimirMatriz(matriz,filas,columnas)
 FinAlgoritmo
